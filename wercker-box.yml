@@ -1,12 +1,12 @@
 name: test
 version: 0.0.1
 inherits: wercker/ubuntu12.04-webessentials@1.0.4
-type: language
+type: main
 platform: ubuntu@12.04
-description: test box
+description: test
 keywords:
   - test
-    script: |
-      sudo apt-get update -y
-      sudo apt-get install python-pip
-      sudo pip install ansible
+script: |
+  sudo apt-get update -y
+  sudo apt-get install python-pip
+  sudo pip install ansible
